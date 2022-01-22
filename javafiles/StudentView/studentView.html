@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="SchoolView"/>
+        <meta name="keywords" content="Lab4"/>
+        <meta name="author" content="Jakub Sachajko"/>
+        <title>Student view</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="studentView.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>Student View</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="../studentView/studentView.html">schools</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2 id="username">Student</h2></header>
+                    <section>
+                        <h3>Student Details</h3>
+                        <div class="details-grid">
+                            <label for="student_id">student Id:</label><span id="student_id">Student Id</span></br>
+                            <label for="name">Name:</label><span id="name">Name</span></br>
+                            <label for="surname">Surname:</label><span id="surname">Surname</span></br>
+                            <label for="email">Email:</label><span id="email">Email</span></br>
+                            <label for="school">School:</label><span id="school">School</span></br>
+                        </div>
+                    </section>
+                </article>
+                <button class="ui-button ui-control" text-align="center" id="goBackToSchoolList" onclick="location.href='../SchoolList/schoolList.html'"
+                >go Back To School List</button>
+            </section>
+
+        </div>
+    </body>
+</html>

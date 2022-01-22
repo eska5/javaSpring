@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="AUI Lab 4 179976"/>
+    <meta name="keywords" content="Lab 4"/>
+    <meta name="author" content="Jakub Sachajko"/>
+    <title>Edit School</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="schoolEdit.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Edit School</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <li><a href="../SchoolList/schoolList.html">schools</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Edit school record</h2></header>
+            <form class="school__form" id="schoolForm">
+                <label for="schoolName">School name:</label>
+                <input class="ui-control ui-input" id="schoolName" name="schoolName" disabled/></br>
+                <label for="country">Country:</label>
+                <input class="ui-control ui-input" id="country" name="country" /></br>
+                <label for="year_of_foundation">Year of foundation:</label>
+                <input class="ui-control ui-input" id="year_of_foundation" name="year_of_foundation" type="number"/></br>
+                <input class="ui-button ui-control" type="submit" name="update"/></br>
+            </form>
+        </article>
+        <button class="ui-button ui-control" text-align="center" id="goBackToSchoolList" onclick="location.href='../SchoolList/schoolList.html'"
+        >go back to school list</button>
+    </section>
+
+</div>
+</body>
+</html>

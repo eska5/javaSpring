@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="description" content="AUI Lab 4 179976"/>
+    <meta name="keywords" content="Lab 4"/>
+    <meta name="author" content="Jakub Sachajko"/>
+    <title>Edit School</title>
+    <link rel="stylesheet" href="../styles.css"/>
+    <script src="../script.js" defer="defer"></script>
+    <script type="module" src="studentEdit.js" defer="defer"></script>
+</head>
+<body>
+<div class="container">
+    <header class="header">
+        <h1>Edit Student</h1>
+    </header>
+
+    <nav class="navigation-bar">
+        <ul>
+            <li><a href="../index.html">main</a></li>
+            <li><a href="../SchoolList/schoolList.html">schools</a></li>
+        </ul>
+    </nav>
+
+    <section class="main-section">
+        <article class="text--justified">
+            <header><h2>Edit student record</h2></header>
+            <form class="student__form" id="studentForm">
+                <label for="student_id">Id:</label>
+                <input class="ui-control ui-input" id="student_id" name="student_id" disabled/></br>
+                <label for="name">Name:</label>
+                <input class="ui-control ui-input" id="name" name="name" /></br>
+                <label for="surname">Surname:</label>
+                <input class="ui-control ui-input" id="surname" name="surname" /></br>
+                <label for="email">Email:</label>
+                <input class="ui-control ui-input" id="email" name="email" /></br>
+                <label for="school">School:</label>
+                <input class="ui-control ui-input" id="school" name="school" disabled/></br>
+                <input class="ui-button ui-control" type="submit" name="update"/></br>
+            </form>
+        </article>
+        <button class="ui-button ui-control" text-align="center" id="goBackToSchoolList" onclick="location.href='../SchoolList/schoolList.html'"
+        >go Back To School List</button>
+    </section>
+
+</div>
+</body>
+</html>
