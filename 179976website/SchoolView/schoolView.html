@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="SchoolView"/>
+        <meta name="keywords" content="Lab4"/>
+        <meta name="author" content="Jakub Sachajko"/>
+        <title>School view</title>
+        <link rel="stylesheet" href="../styles.css"/>
+        <script src="../script.js" defer="defer"></script>
+        <script type="module" src="schoolView.js" defer="defer"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header class="header">
+                <h1>School View</h1>
+            </header>
+
+            <nav class="navigation-bar">
+                <ul>
+                    <li><a href="../index.html">main</a></li>
+                    <li><a href="../SchoolList/schoolList.html">schools</a></li>
+                </ul>
+            </nav>
+
+            <section class="main-section">
+                <article class="text--justified">
+                    <header><h2 id="username">School</h2></header>
+                    <section>
+                        <h3>School Details</h3>
+                        <div class="details-grid">
+                            <label for="school name">School Name:</label><span id="school name">school Name</span></br>
+                            <label for="country">Country:</label><span id="country">country</span></br>
+                            <label for="year of foundation">Year of foundation:</label>
+                            <span id="year of foundation">year of foundation</span></br>
+                        </div>
+                    </section>
+                    <section>
+                        <h3>Students</h3>
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>id</th>
+                                    <th>name</th>
+                                    <th>view</th>
+                                    <th>edit</th>
+                                    <th>delete</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tableBody">
+                                <tr>
+                                    <td></td>
+                                    <td><a href="#">view</a></td>
+                                    <td><a href="#">edit</a></td>
+                                    <td>
+                                        <button class="ui-button ui-control">delete</button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </article>
+                <button class="ui-button ui-control" id="addButton" onclick="location.href='../studentAdd/studentAdd.html?school=' +
+                new URLSearchParams(document.location.search).get('school')">add student</button>
+                <button class="ui-button ui-control" text-align="center" id="goBackToSchoolList" onclick="location.href='../SchoolList/schoolList.html'"
+                >go Back To School List</button>
+            </section>
+
+        </div>
+    </body>
+</html>
